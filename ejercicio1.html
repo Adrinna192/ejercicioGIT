@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serie Fibonacci</title>
+</head>
+
+<h1>Serie Fibonacci</h1>
+<body>
+    <script>
+    let numeroDeElementos=6;
+    var conv = parseFloat(numeroDeElementos=6);
+    let a, b, c;
+
+    if (conv <= 0) {
+        console.log("El numero a ingesar debe ser mayor que cero");
+            
+        } else {
+            a=0;
+            b=1;
+            console.log("La serie de Fibonacci es:");
+            for (let i = 1; i <= conv; i++) {
+                c =b
+                b +=a;
+                console.log(b+"");
+                a=c;
+                
+            }
+        
+    }
+    </script>
+    
+</body>
+</html>
+
