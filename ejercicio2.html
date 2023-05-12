@@ -6,41 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body><script> let inicio=["una cadena",3,9,1,10,500,2,10,true];
+<body><script> let inicio=["una cadena",3,9,1,10,500,2,100,true];
          inicio.shift();
          console.log( inicio);
 
          inicio.pop();
-         console.log(inicio);
+         console.log(inicio)
 
-        function ordenarNumeros(inicio) {
-            if(!Array.isArray(inicio)) {
-             throw TypeError('El argumento debe ser un arreglo.');
+         let numbers = [3,9,1,10,500,2,100];
+         numbers.sort((a,b)=> {
+            if (a==b) {
+                return 0;
             }
-            for (let index = 0; index < inicio.length -1; index++) {
-
-                for (let j= 0; j < inicio.length -i -1; j++) {
-                    if(inicio[j] > inicio[j + 1]) {
-                      [inicio[j], numeros[j + 1]] = [inicio[j + 1], inicio[j]];
-                    }  
-                }
-                
+            if (a<b) {
+                return -1;
             }
-            
-        }
-
-        let datos = [3,9,1,10,500,2,10];
-        try{
-            console.log(datos);
-
-            console.log();
-
-            ordenarNumeros(datos)
-            
-        } catch (e) {
-            console.log('Error: ${e.message}');
-        }   
-              
+             return 1;
+            } );
+            console.log(numbers);
        
      
 
